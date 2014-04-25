@@ -8,7 +8,7 @@ categories: consul
 
 While at [Craft](http://craft-conf.com/2014) I decided to have a quick look at
 [Consul](http://www.consul.io/), a new service discovery framework with
-a few intersting features. One of the main selling points is a DNS
+a few interesting features. One of the main selling points is a DNS
 interface with a nice API. The [Introduction](http://www.consul.io/intro/index.html)
 shows how to use this via the dig command line tool, but how do you use
 a custom internal DNS server without modifying all your applications?
@@ -39,7 +39,7 @@ All we're doing here is specifying that DNS requests for consul services
 are to be dealt with by the DNS server at 127.0.0.1 on port 8600. Unless
 you've changed the consul defaults this should work.
 
-Just in case you prefer Puppet their is already a handy
+Just in case you prefer Puppet there is already a handy
 [dnsmasq](https://github.com/saz/puppet-dnsmasq) module. The resulting
 puppet code then looks like this.
 
